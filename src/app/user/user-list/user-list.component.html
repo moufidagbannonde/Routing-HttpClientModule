@@ -1,0 +1,10 @@
+<p>user-list works!</p>
+<h2>Liste des Utilisateurs</h2>
+<ul>
+    <li *ngFor="let user of users">
+        {{user.id}})
+        <h3>{{ user.login }}</h3>
+        <u>Repositories links</u> :{{ user.repos_url}}
+        <img [src]="user.avatar_url" alt="" />
+    </li>
+</ul>
